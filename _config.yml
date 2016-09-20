@@ -1,0 +1,37 @@
+# Site settings
+
+title: Dev Curriculum | Simple and fast curriculum generator for developers # put your portfolio title
+description: The fastest and simplest way to make a developer curriculum # put your description for your portfolio
+baseurl: "" # the subpath of your site, e.g. /portfolio
+url: "" # the base hostname & protocol for your site
+language: "" # language to set into html tag, default is en
+
+# User settings
+
+author: Wendell Adriel # put your name
+email: example@example.com # put your email
+twitter_username: example
+github_username: example
+gplus_username: example
+
+# Navigation menu
+links:
+  - title: Home
+  - title: Contact
+    url: /contact
+
+# Build settings
+
+markdown: kramdown
+highlighter: rouge
+sitemap: true # Generate sitemap.xml
+feed:
+  path: atom.xml
+
+## For more settings: https://jekyllrb.com/docs/configuration/
+
+# exclude files if no need build
+exclude: ['package.json', 'node_modules', 'README.md', 'LICENSE']
+
+# Gems
+gems: [jekyll-sitemap]
