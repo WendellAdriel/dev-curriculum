@@ -25,13 +25,14 @@ links:
 markdown: kramdown
 highlighter: rouge
 sitemap: true # Generate sitemap.xml
-feed:
-  path: atom.xml
 
+sass:
+  sass_dir: css
+  style: compressed
 ## For more settings: https://jekyllrb.com/docs/configuration/
 
 # exclude files if no need build
 exclude: ['package.json', 'node_modules', 'README.md', 'LICENSE']
 
 # Gems
-gems: [jekyll-sitemap]
+gems: [jekyll-sitemap, bourbon]
