@@ -1,3 +1,8 @@
 <section class="others">
   <h3>Others Skills Section</h3>
+  <ul>
+    {% for skill in site.others %}
+      <li>{{ skill.name }} - {{ skill.level }}</li>
+    {% endfor %}
+  </ul>
 </section>

@@ -9,10 +9,86 @@ language: "" # language to set into html tag, default is en
 # User settings
 
 author: Wendell Adriel # put your name
+author-title: Full Stack Developer
+gravatar: example
 email: example@example.com # put your email
 twitter_username: example
 github_username: example
 gplus_username: example
+facebook_username: example
+linkedin_profile: example #full URL
+bio: "Brazilian developer. Game, music and technology lover.
+      I graduated in Systems Analysis and Development. I'm a Zend Certified PHP Engineer and Scrum Fundamentals Certified. I love to study and learn new skills,
+      exchange work and study experience with people around me and share my knowledge with the ones that want it. I work with Web Development since 2009 and with
+      Mobile Development since 2015 as Freelancer and in some Brazilian companies too.
+      I'm the creator of CodeShare, a free portal with articles, videos, etc, about Software Development. The purpose of this project is to help people who want
+      to learn about Software Development and start their careers in IT area and to help people that already work with Software Development to improve their
+      technical knowledge to get better job opportunities.
+      I like to work with both: Front-End and Back-End development. I work with many languages, frameworks and technologies."
+
+# Skills
+
+# You can customise the skill level name, for my use I'll use five differents levels:
+# Studying: You know the basics of the skill and is studying it to get better
+# Padawan: You know a little more than the basics and is comfortable to work with it
+# Work with: You know how to handle the skill and how to properly use it in a real project
+# Specialist: You have advanced knowledge of the skill and know how to use its best practices in a real project
+# Jedi: You master the skill, know how and when to use and when not use it
+front-end:
+  - name: HTML 5
+    level: Specialist
+  - name: CSS 3
+    level: Specialist
+  - name: JavaScript
+    level: Specialist
+
+back-end:
+  - name: PHP
+    level: Jedi
+  - name: Node
+    level: Work with
+  - name: Ruby
+    level: Padawan
+
+mobile:
+  - name: Android
+    level: Studying
+  - name: Ionic
+    level: Specialist
+  - name: NativeScript
+    level: Work with
+
+db:
+  - name: MySQL
+    level: Specialist
+  - name: PostgreSQL
+    level: Work with
+  - name: MongoDB
+    level: Specialist
+
+devops:
+  - name: Docker
+    level: Work with
+  - name: Vagrant
+    level: Work with
+  - name: Jenkins
+    level: Studying
+
+methodologies:
+  - name: Agile Methodologies
+    level: Work with
+  - name: Scrum
+    level: Specialist
+  - name: RUP
+    level: Work with
+
+others:
+  - name: Git
+    level: Specialist
+  - name: Web Services
+    level: Specialist
+  - name: REST
+    level: Specialist
 
 # Navigation menu
 links:

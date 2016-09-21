@@ -1,3 +1,8 @@
 <section class="back-end">
   <h3>Back-end Section</h3>
+  <ul>
+    {% for skill in site.back-end %}
+      <li>{{ skill.name }} - {{ skill.level }}</li>
+    {% endfor %}
+  </ul>
 </section>

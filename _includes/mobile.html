@@ -1,3 +1,8 @@
 <section class="mobile">
   <h3>Mobile Section</h3>
+  <ul>
+    {% for skill in site.mobile %}
+      <li>{{ skill.name }} - {{ skill.level }}</li>
+    {% endfor %}
+  </ul>
 </section>
