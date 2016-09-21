@@ -2,5 +2,20 @@ html,
 body
   height: 100%
 
+a
+  color: #000
+  text-decoration: none
+
 .section
   padding: rem(15)
+
+.feature-icon
+  font-size: rem(35)
+  @include transition(all 0.5s ease-in-out)
+  &:hover
+    color: #fff
+    font-size: rem(45)
+    @include transition(all 0.5s ease-in-out)
+
+.section-icon
+  font-size: rem(60)
