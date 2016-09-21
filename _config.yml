@@ -8,15 +8,15 @@ language: "" # language to set into html tag, default is en
 
 # User settings
 
-author: Wendell Adriel # put your name
+author: Wendell Adriel
 author-title: Full Stack Developer
-gravatar: example
-email: example@example.com # put your email
-twitter_username: example
-github_username: example
-gplus_username: example
-facebook_username: example
-linkedin_profile: example #full URL
+gravatar: d36a082aacb53b6f76869748fb4b81d4
+email: wendelladriel.ti@gmail.com
+twitter: wendell_adriel
+github: WendellAdriel
+googleplus: +WendellAdriel
+facebook: wendell.adriel.7
+linkedin: wendelladrielti/en
 bio: "Brazilian developer. Game, music and technology lover.
       I graduated in Systems Analysis and Development. I'm a Zend Certified PHP Engineer and Scrum Fundamentals Certified. I love to study and learn new skills,
       exchange work and study experience with people around me and share my knowledge with the ones that want it. I work with Web Development since 2009 and with
@@ -92,9 +92,24 @@ others:
 
 # Navigation menu
 links:
-  - title: Home
+  - title: Bio
+    section: bio
+  - title: Front-end
+    section: front-end
+  - title: Back-end
+    section: back-end
+  - title: Mobile
+    section: mobile
+  - title: Database
+    section: db
+  - title: DevOps
+    section: devops
+  - title: Methodologies
+    section: methodologies
+  - title: Other Skills
+    section: others
   - title: Contact
-    url: #contact
+    section: contact
 
 # Build settings
 
@@ -111,4 +126,4 @@ sass:
 exclude: ['package.json', 'node_modules', 'README.md', 'LICENSE']
 
 # Gems
-gems: [jekyll-sitemap, bourbon, font-awesome-sass]
+gems: [jekyll-sitemap, bourbon]
