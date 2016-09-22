@@ -126,4 +126,4 @@ sass:
 exclude: ['package.json', 'node_modules', 'README.md', 'LICENSE']
 
 # Gems
-gems: [jekyll-sitemap, bourbon]
+gems: [jekyll-sitemap, bourbon, breakpoint]

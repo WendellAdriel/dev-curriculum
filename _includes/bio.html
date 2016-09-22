@@ -1,6 +1,11 @@
 <section id="bio" class="section bio">
-  <i class="section-icon icon-vcard"></i>
-  <h3>Bio Section</h3>
-  <img src="http://www.gravatar.com/avatar/{{ site.gravatar }}?s=200" alt="{{ site.author }}"
-  <p>{{ site.bio }}</p>
+  {% if site.gravatar %}
+    <img class="bio-img" src="http://www.gravatar.com/avatar/{{ site.gravatar }}?s=400" alt="{{ site.author }}"
+  {% else %}
+    <i class="bio-icon icon-vcard"></i>
+  {% endif %}
+  <br>
+  <div class="bio-text">
+    <p>{{ site.bio }}</p>
+  </div>
 </section>

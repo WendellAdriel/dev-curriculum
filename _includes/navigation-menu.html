@@ -1,7 +1,9 @@
 <nav>
-  <ul>
-    {% for link in site.links %}
-      <li><a href="#{{ link.section }}" title="{{ link.title }}">{{ link.title }}</a></li>
-    {% endfor %}
-  </ul>
+  <div class="navbar-links">
+    <ul>
+      {% for link in site.links %}
+        <li><a href="#{{ link.section }}" title="{{ link.title }}">{{ link.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
 </nav>

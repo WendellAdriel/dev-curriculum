@@ -1,2 +1,49 @@
 header
   background-color: $header
+  height: 100%
+
+nav
+  ul
+    list-style-type: none
+    margin: 0
+    padding: 0
+    overflow: hidden
+
+    li
+      float: left
+
+      a
+        display: inline-block
+        font-size: rem(14)
+        font-weight: bold
+        padding: rem(5) rem(7)
+        text-align: center
+        @include transition(all 1s ease-in-out)
+
+        &:hover
+          border-bottom: 4px #ff0 solid
+          font-size: rem(18)
+          @include transition(all 0.5s ease-in-out)
+
+.navbar-links
+  display: block
+  margin: auto
+  width: 90%
+
+.header-info
+  @include align(both)
+
+.author-name
+  font-size: rem(70)
+
+.author-title
+  font-size: rem(25)
+
+.feature-icon
+  font-size: rem(80)
+  @include transition(all 0.5s ease-in-out)
+
+  &:hover
+    color: #fff
+    font-size: rem(90)
+    @include transition(all 0.5s ease-in-out)

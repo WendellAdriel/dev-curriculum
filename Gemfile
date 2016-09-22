@@ -3,3 +3,4 @@ gemspec
 
 gem 'jekyll-sitemap'
 gem 'bourbon'
+gem 'breakpoint'
