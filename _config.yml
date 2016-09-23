@@ -25,7 +25,7 @@ bio: "Brazilian developer. Game, music and technology lover.
       I like to work with both: Front-End and Back-End development. I work with many languages, frameworks and technologies."
 
 # Skills
-
+#
 # I'll use five differents levels:
 # Studying: You know the basics of the skill and is studying it to get better
 # Padawan: You know a little more than the basics and is comfortable to work with it
@@ -34,6 +34,8 @@ bio: "Brazilian developer. Game, music and technology lover.
 # Jedi: You master the skill, know how and when to use and when not use it
 #
 # You can change these names, but if you do, remember to change the values in _includes/_skill-level-function.html too
+#
+# If you don't want one of the sections below, leave the variable without any values
 front-end:
   - name: HTML 5
     level: Specialist
