@@ -2,25 +2,25 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <title>{{ site.title }}</title>
+  <title>{{ site.author }} | {{ site.author-title }}</title>
   <link rel="stylesheet" href="./css/main.css">
-  <meta name="description" content="{{ site.description }}">
+  <meta name="description" content="{{ site.bio }}">
   <link rel="author" href="https://plus.google.com/{{ site.gplus_username }}?rel=author">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@{{ site.twitter_username }}">
-  <meta name="twitter:title" content="{{ site.title }}">
-  <meta name="twitter:description" content="{{ site.description }}">
+  <meta name="twitter:title" content="{{ site.author }} | {{ site.author-title }}">
+  <meta name="twitter:description" content="{{ site.bio }}">
   <meta property="twitter:image:src" content="{{ "/assets/images/site-shared-image.png" | prepend: site.baseurl | prepend: site.url }}">
 
   <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <meta property="og:title" content="{{ site.title }}">
+  <meta property="og:title" content="{{ site.author }} | {{ site.author-title }}">
   <meta property="og:image" content="{{ "/assets/images/site-shared-image.png" | prepend: site.baseurl | prepend: site.url }}">
-  <meta property="og:description" content="{{ site.description }}">
-  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:description" content="{{ site.bio }}">
+  <meta property="og:site_name" content="{{ site.author }} | {{ site.author-title }}">
 
-  <meta itemprop="name" content="{{ site.title }}"/>
-  <meta itemprop="description" content="{{ site.description }}">
+  <meta itemprop="name" content="{{ site.author }} | {{ site.author-title }}"/>
+  <meta itemprop="description" content="{{ site.bio }}">
   <meta itemprop="image" content="{{ "/assets/images/site-shared-image.png" | prepend: site.baseurl | prepend: site.url }}"/>
 
   <link rel="shortcut icon" href="{{site.baseurl}}/assets/images/icons/favicon.ico" type="image/x-icon" />

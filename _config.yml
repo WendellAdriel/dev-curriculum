@@ -1,7 +1,5 @@
 # Site settings
 
-title: Dev Curriculum | Simple and fast curriculum generator for developers # put your portfolio title
-description: The fastest and simplest way to make a developer curriculum # put your description for your portfolio
 baseurl: "" # the subpath of your site, e.g. /portfolio
 url: "" # the base hostname & protocol for your site
 language: "" # language to set into html tag, default is en
@@ -28,12 +26,14 @@ bio: "Brazilian developer. Game, music and technology lover.
 
 # Skills
 
-# You can customise the skill level name, for my use I'll use five differents levels:
+# I'll use five differents levels:
 # Studying: You know the basics of the skill and is studying it to get better
 # Padawan: You know a little more than the basics and is comfortable to work with it
 # Work with: You know how to handle the skill and how to properly use it in a real project
 # Specialist: You have advanced knowledge of the skill and know how to use its best practices in a real project
 # Jedi: You master the skill, know how and when to use and when not use it
+#
+# You can change these names, but if you do, remember to change the values in _includes/_skill-level-function.html too
 front-end:
   - name: HTML 5
     level: Specialist
