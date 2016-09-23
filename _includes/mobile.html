@@ -4,8 +4,8 @@
   <ul class="skill-list">
     {% for skill in site.mobile %}
       <li class="mobile-skill">
-        <div class="expand mobile-level {% include _skill-level-function.html level=skill.level  %}"></div>
-        <em>{{ skill.name }} - {{ skill.level }}<em>
+        <div class="expand mobile-level {% include _skill-level-css.html level=skill.level  %}"></div>
+        <em>{{ skill.name }} - {% include _skill-level-name.html level=skill.level  %}<em>
       </li>
     {% endfor %}
   </ul>

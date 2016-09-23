@@ -27,74 +27,76 @@ bio: "Brazilian developer. Game, music and technology lover.
 # Skills
 #
 # I'll use five differents levels:
-# Studying: You know the basics of the skill and is studying it to get better
-# Padawan: You know a little more than the basics and is comfortable to work with it
-# Work with: You know how to handle the skill and how to properly use it in a real project
-# Specialist: You have advanced knowledge of the skill and know how to use its best practices in a real project
-# Jedi: You master the skill, know how and when to use and when not use it
+# 1 - Studying: You know the basics of the skill and is studying it to get better
+# 2 - Padawan: You know a little more than the basics and is comfortable to work with it
+# 3 - Work with: You know how to handle the skill and how to properly use it in a real project
+# 4 - Specialist: You have advanced knowledge of the skill and know how to use its best practices in a real project
+# 5 - Jedi: You master the skill, know how and when to use and when not use it
 #
-# You can change these names, but if you do, remember to change the values in _includes/_skill-level-function.html too
+# You can change these names in _includes/_skill-level-name.html if you wish
 #
 # If you don't want one of the sections below, leave the variable without any values
 front-end:
   - name: HTML 5
-    level: Specialist
+    level: 4
   - name: CSS 3
-    level: Specialist
+    level: 4
   - name: JavaScript
-    level: Specialist
+    level: 4
+  - name: jQuery
+    level: 4
   - name: SASS
-    level: Work with
+    level: 3
   - name: Materialize CSS
-    level: Jedi
+    level: 5
 
 back-end:
   - name: PHP
-    level: Jedi
+    level: 5
   - name: Node
-    level: Work with
+    level: 3
   - name: Ruby
-    level: Padawan
+    level: 2
 
 mobile:
   - name: Android
-    level: Studying
+    level: 1
   - name: Ionic
-    level: Specialist
+    level: 4
   - name: NativeScript
-    level: Work with
+    level: 3
 
 db:
   - name: MySQL
-    level: Specialist
+    level: 4
   - name: PostgreSQL
-    level: Work with
+    level: 3
   - name: MongoDB
-    level: Specialist
+    level: 4
 
 devops:
   - name: Docker
-    level: Work with
+    level: 3
   - name: Vagrant
-    level: Work with
+    level: 3
   - name: Jenkins
-    level: Studying
+    level: 1
 
 methodologies:
   - name: Agile Methodologies
-    level: Work with
+    level: 3
   - name: Scrum
-    level: Specialist
+    level: 4
   - name: RUP
-    level: Work with
+    level: 3
 
 others:
   - name: Git
-    level: Specialist
+    level: 5
   - name: Web Services
-    level: Specialist
+    level: 5
   - name: REST
-    level: Specialist
+    level: 5
 
 # Build settings
 

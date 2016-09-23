@@ -1,0 +1,14 @@
+{% case include.level %}
+  {% when 1 %}
+    Studying
+  {% when 2 %}
+    Padawan
+  {% when 3 %}
+    Work with
+  {% when 4 %}
+    Specialist
+  {% when 5 %}
+    Jedi
+  {% else %}
+    No skill
+{% endcase %}
