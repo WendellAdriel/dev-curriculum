@@ -1,9 +1,12 @@
 <section id="mobile" class="section mobile">
   <i class="section-icon icon-mobile"></i>
   <span class="section-title">Mobile</span>
-  <ul>
+  <ul class="skill-list">
     {% for skill in site.mobile %}
-      <li>{{ skill.name }} - {{ skill.level }}</li>
+      <li class="mobile-skill">
+        <div class="expand mobile-level {% include _skill-level-function.html level=skill.level  %}"></div>
+        <em>{{ skill.name }} - {{ skill.level }}<em>
+      </li>
     {% endfor %}
   </ul>
 </section>

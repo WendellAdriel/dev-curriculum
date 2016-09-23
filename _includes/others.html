@@ -1,9 +1,12 @@
 <section id="others" class="section others">
   <i class="section-icon icon-graduation-cap"></i>
   <span class="section-title">Others Skills</span>
-  <ul>
+  <ul class="skill-list">
     {% for skill in site.others %}
-      <li>{{ skill.name }} - {{ skill.level }}</li>
+      <li class="others-skill">
+        <div class="expand others-level {% include _skill-level-function.html level=skill.level  %}"></div>
+        <em>{{ skill.name }} - {{ skill.level }}<em>
+      </li>
     {% endfor %}
   </ul>
 </section>

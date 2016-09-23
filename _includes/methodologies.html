@@ -1,9 +1,12 @@
 <section id="methodologies" class="section methodologies">
   <i class="section-icon icon-book"></i>
   <span class="section-title">Methodologies</span>
-  <ul>
+  <ul class="skill-list">
     {% for skill in site.methodologies %}
-      <li>{{ skill.name }} - {{ skill.level }}</li>
+      <li class="methodologies-skill">
+        <div class="expand methodologies-level {% include _skill-level-function.html level=skill.level  %}"></div>
+        <em>{{ skill.name }} - {{ skill.level }}<em>
+      </li>
     {% endfor %}
   </ul>
 </section>

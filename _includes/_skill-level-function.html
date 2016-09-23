@@ -1,0 +1,14 @@
+{% case include.level %}
+  {% when 'Studying' %}
+    study-level
+  {% when 'Padawan' %}
+    padawan-level
+  {% when 'Work with' %}
+    work-level
+  {% when 'Specialist' %}
+    specialist-level
+  {% when 'Jedi' %}
+    jedi-level
+  {% else %}
+    default-level
+{% endcase %}

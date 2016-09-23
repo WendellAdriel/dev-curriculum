@@ -41,6 +41,10 @@ front-end:
     level: Specialist
   - name: JavaScript
     level: Specialist
+  - name: SASS
+    level: Work with
+  - name: Materialize CSS
+    level: Jedi
 
 back-end:
   - name: PHP
@@ -89,27 +93,6 @@ others:
     level: Specialist
   - name: REST
     level: Specialist
-
-# Navigation menu
-links:
-  - title: Bio
-    section: bio
-  - title: Front-end
-    section: front-end
-  - title: Back-end
-    section: back-end
-  - title: Mobile
-    section: mobile
-  - title: Database
-    section: db
-  - title: DevOps
-    section: devops
-  - title: Methodologies
-    section: methodologies
-  - title: Other Skills
-    section: others
-  - title: Contact
-    section: contact
 
 # Build settings
 

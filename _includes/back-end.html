@@ -1,9 +1,12 @@
 <section id="back-end" class="section back-end">
   <i class="section-icon icon-code"></i>
   <span class="section-title">Back-end</span>
-  <ul>
+  <ul class="skill-list">
     {% for skill in site.back-end %}
-      <li>{{ skill.name }} - {{ skill.level }}</li>
+      <li class="back-skill">
+        <div class="expand back-level {% include _skill-level-function.html level=skill.level  %}"></div>
+        <em>{{ skill.name }} - {{ skill.level }}<em>
+      </li>
     {% endfor %}
   </ul>
 </section>

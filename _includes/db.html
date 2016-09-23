@@ -1,9 +1,12 @@
 <section id="db" class="section db">
   <i class="section-icon icon-database"></i>
   <span class="section-title">Database</span>
-  <ul>
+  <ul class="skill-list">
     {% for skill in site.db %}
-      <li>{{ skill.name }} - {{ skill.level }}</li>
+      <li class="db-skill">
+        <div class="expand db-level {% include _skill-level-function.html level=skill.level  %}"></div>
+        <em>{{ skill.name }} - {{ skill.level }}<em>
+      </li>
     {% endfor %}
   </ul>
 </section>
