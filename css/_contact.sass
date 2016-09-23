@@ -1,2 +1,46 @@
 .contact
   background-color: $contact
+  color: lighten($secondary, 20%)
+
+.form-panel
+  padding-left: 5%
+
+input,
+textarea
+  background: transparent
+  border: none
+  border-bottom: 1px solid darken($contact, 30%)
+  color: lighten($secondary, 20%)
+  display: block
+  font-size: rem(25)
+  height: rem(40)
+  margin-bottom: rem(50)
+  outline: none
+  padding: rem(10)
+  width: 90%
+
+  &:focus
+    border-bottom: 3px solid darken($contact, 50%)
+
+textarea
+  overflow: hidden
+  resize: none
+
+button
+  background-color: transparent
+  border: 5px solid lighten($secondary, 20%)
+  border-radius: 7px
+  color: lighten($secondary, 20%)
+  cursor: pointer
+  display: inline-block
+  font-size: rem(28)
+  padding: rem(10) rem(20)
+  text-decoration: none
+  text-transform: uppercase
+  @include transition(all 0.5s ease-in-out)
+
+  &:hover
+    background-color: lighten($secondary, 20%)
+    color: $primary
+    font-size: rem(35)
+    @include transition(all 0.5s ease-in-out)

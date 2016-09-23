@@ -1,9 +1,18 @@
 <section id="contact" class="section contact">
   <i class="section-icon icon-at-sign"></i>
   <span class="section-title">Contact</span>
-  <form action="https://formspree.io/{{ site.email }}" method="POST">
-    <input type="text" name="name">
-    <input type="email" name="_replyto">
-    <input type="submit" value="Send">
-  </form>
+  <div class="form-panel">
+    <form action="https://formspree.io/{{ site.email }}" method="POST" target="_blank">
+      <input type="email" name="email" placeholder="Your email">
+      <textarea name="message" placeholder="Your message" onkeyup="adjust_textarea(this)"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </div>
 </section>
+
+<script type="text/javascript">
+  function adjust_textarea(textarea) {
+    textarea.style.height = "20px";
+    textarea.style.height = (textarea.scrollHeight)+"px";
+  }
+</script>
