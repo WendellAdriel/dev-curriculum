@@ -1,8 +1,9 @@
+{% assign skills = site.mobile | sort: 'level' | reverse %}
 <section id="mobile" class="section mobile">
   <i class="section-icon icon-mobile"></i>
   <span class="section-title">Mobile</span>
   <ul class="skill-list">
-    {% for skill in site.mobile %}
+    {% for skill in skills %}
       <li class="mobile-skill">
         <div class="expand mobile-level {% include _skill-level-css.html level=skill.level  %}"></div>
         <em>{{ skill.name }} - {% include _skill-level-name.html level=skill.level  %}<em>

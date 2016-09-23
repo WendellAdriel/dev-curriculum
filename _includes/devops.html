@@ -1,8 +1,9 @@
+{% assign skills = site.devops | sort: 'level' | reverse %}
 <section id="devops" class="section devops">
   <i class="section-icon icon-cogs"></i>
   <span class="section-title">DevOps</span>
   <ul class="skill-list">
-    {% for skill in site.devops %}
+    {% for skill in skills %}
       <li class="devops-skill">
         <div class="expand devops-level {% include _skill-level-css.html level=skill.level  %}"></div>
         <em>{{ skill.name }} - {% include _skill-level-name.html level=skill.level  %}<em>
