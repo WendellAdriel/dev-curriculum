@@ -7,8 +7,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["WendellAdriel"]
   spec.email         = ["wendelladriel.ti@gmail.com"]
 
-  spec.summary       = %q{Simple and fast curriculum generator for developers}
-  spec.description   = "The fastest and simplest way to make a developer curriculum made with Jekyll and __s. Look the project page for more informations: https://github.com/WendellAdriel/dev-curriculum"
+  spec.summary       = %q{Instant web curriculum generator for developers}
+  spec.description   = "The fastest and simplest way to make a web curriculum for developers. Made with Jekyll and __s. Look the project page for more informations: https://github.com/WendellAdriel/dev-curriculum"
   spec.homepage      = "https://github.com/WendellAdriel/dev-curriculum"
   spec.license       = "MIT"
   spec.metadata = { "issue_tracker" => "https://github.com/WendellAdriel/dev-curriculum/issues" }

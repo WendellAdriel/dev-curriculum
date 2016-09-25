@@ -45,22 +45,50 @@ front-end:
     level: 4
   - name: jQuery
     level: 4
-  - name: SASS
-    level: 3
+  - name: Angular
+    level: 4
+  - name: Vue.js
+    level: 2
+  - name: Bootstrap
+    level: 4
   - name: Materialize CSS
     level: 5
+  - name: LESS
+    level: 3
+  - name: SASS
+    level: 3
+  - name: Stylus
+    level: 4
+  - name: Gulp
+    level: 4
+  - name: Grunt
+    level: 3
+  - name: Bower
+    level: 3
 
 back-end:
   - name: PHP
     level: 5
-  - name: Node
+  - name: Node.js
     level: 3
   - name: Ruby
+    level: 2
+  - name: Python
+    level: 2
+  - name: Java
+    level: 4
+  - name: COBOL
+    level: 2
+  - name: SQL
+    level: 4
+  - name: Lua
     level: 2
 
 mobile:
   - name: Android
-    level: 1
+    level: 2
+  - name: Apache Cordova
+    level: 4
   - name: Ionic
     level: 4
   - name: NativeScript
@@ -73,6 +101,14 @@ db:
     level: 3
   - name: MongoDB
     level: 4
+  - name: SQL Server
+    level: 2
+  - name: Oracle
+    level: 3
+  - name: Firebase
+    level: 3
+  - name: NoSQL
+    level: 4
 
 devops:
   - name: Docker
@@ -81,6 +117,14 @@ devops:
     level: 3
   - name: Jenkins
     level: 1
+  - name: Git
+    level: 5
+  - name: Apache Maven
+    level: 3
+  - name: Continuous Integration
+    level: 3
+  - name: Continuous Delivery
+    level: 2
 
 methodologies:
   - name: Agile Methodologies
@@ -91,12 +135,32 @@ methodologies:
     level: 3
 
 others:
-  - name: Git
-    level: 5
   - name: Web Services
     level: 5
   - name: REST
     level: 5
+  - name: JEE, JSF, JPA, EJB, CDI
+    level: 3
+  - name: iReport, Jasper Reports
+    level: 2
+  - name: Hibernate
+    level: 3
+  - name: Grails
+    level: 2
+  - name: Symfony
+    level: 3
+  - name: Twig
+    level: 4
+  - name: Doctrine ORM
+    level: 3
+  - name: Laravel, Blade, Eloquent ORM
+    level: 5
+  - name: Ruby on Rails
+    level: 3
+  - name: MEAN Stack
+    level: 4
+  - name: Spring
+    level: 3
 
 # Build settings
 
