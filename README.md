@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="screenshot.png" alt="Dev Curriculum logo">
+    <img src="logo.png" alt="Dev Curriculum logo">
 </p>
 
 # Dev Curriculum
