@@ -6,7 +6,7 @@
     {% for skill in skills %}
       <li class="db-skill">
         <div class="expand db-level {% include _skill-level-css.html level=skill.level  %}"></div>
-        <em>{{ skill.name }} - {% include _skill-level-name.html level=skill.level  %}<em>
+        <em>{{ skill.name }} - {% include _skill-level-name.html level=skill.level  %}</em>
       </li>
     {% endfor %}
   </ul>
