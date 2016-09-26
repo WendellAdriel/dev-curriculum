@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="logo.png" alt="Dev Curriculum logo">
+    <img src="screenshot.png" alt="Dev Curriculum logo">
 </p>
 
 # Dev Curriculum
@@ -49,3 +49,7 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/Wendel
 ## License
 
 The theme is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+
+<p align="center">
+    <img src="logo.png" alt="Dev Curriculum logo">
+</p>
