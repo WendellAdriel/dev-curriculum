@@ -11,15 +11,19 @@ a
   padding: rem(10)
   text-align: center
 
-.section-icon
-  font-size: rem(150)
-  vertical-align: middle
-
 .section-title
   font-size: rem(60)
   font-weight: bolder
-  margin-left: rem(20)
+  margin: rem(50) 0 rem(30) 0
   vertical-align: middle
+
+  &:before
+    font-size: rem(150)
+    vertical-align: middle
+    margin:
+      right: rem(20)
+      top: -(rem(40))
+    display: inline-block
 
 .skill-list
   list-style-type: none
@@ -32,10 +36,10 @@ a
   margin-bottom: rem(60)
 
   &:before
-    display: block
-    content: ''
     border-radius: rem(20)
     box-shadow: 0px 0px 10px 1px rgba(0,198,255,0.4)
+    content: ''
+    display: block
     height: rem(11)
     margin-left: 0.3%
     margin-top: rem(2)
