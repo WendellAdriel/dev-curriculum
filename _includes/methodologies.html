@@ -1,7 +1,6 @@
 {% assign skills = site.methodologies | sort: 'level' | reverse %}
 <section id="methodologies" class="section methodologies">
-  <i class="section-icon icon-book"></i>
-  <h3 class="section-title methodologies-title">Methodologies</h3>
+  <h3 class="section-title methodologies-title icon-book">Methodologies</h3>
   <ul class="skill-list">
     {% for skill in skills %}
       <li class="skill {% include _skill-level-css.html level=skill.level  %}">
