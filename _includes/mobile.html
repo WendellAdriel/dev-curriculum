@@ -1,7 +1,7 @@
 {% assign skills = site.mobile | sort: 'level' | reverse %}
 <section id="mobile" class="section mobile">
   <i class="section-icon icon-mobile"></i>
-  <span class="section-title">Mobile</span>
+  <h3 class="section-title">Mobile</h3>
   <ul class="skill-list">
     {% for skill in skills %}
       <li class="skill {% include _skill-level-css.html level=skill.level  %}">
