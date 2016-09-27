@@ -4,8 +4,7 @@
   <span class="section-title">Front-end</span>
   <ul class="skill-list">
     {% for skill in skills %}
-      <li class="front-skill">
-        <div class="expand front-level {% include _skill-level-css.html level=skill.level  %}"></div>
+      <li class="front-skill {% include _skill-level-css.html level=skill.level  %}">
         <em>{{ skill.name }} - {% include _skill-level-name.html level=skill.level  %}</em>
       </li>
     {% endfor %}
