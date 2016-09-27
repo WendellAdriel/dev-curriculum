@@ -26,11 +26,17 @@ I ain't just developed **Dev Curriculum**, I'm also using it as my own Web Curri
 
 ## How to use
 
+First of all make sure you have ruby installed and bundle as well, if not, have refer to the the ruby official website at [ruby.com](https://www.ruby-lang.org/en/documentation/installation/) and bundle official website at [bundler.io](http://bundler.io)
+
+Once you have all environment set up done go ahead and follow the steps below:
+
 #### Step 1 - Fork Dev Curriculum to your User Repository
 
-Fork this repository, then rename the repository to `yourgithubusername.github.io`. Example: `wendelladriel.github.io`.  
+Fork this repository, then rename the repository to `your-github-username.github.io`. Example: `wendelladriel.github.io`.  In order to rename, go to you forked repository and click in settings
 
-At this moment the **Web Curriculum** will often be viewable immediately at http://yourgithubusername.github.io.
+[![settings.png](https://s14.postimg.org/l9ma6nx01/settings.png)](https://postimg.org/image/uheind425/)
+
+At this moment the **Web Curriculum** will often be viewable immediately at http://your-github-username.github.io. But you may need do some changes to make you curriculum as you wish.
 
 #### Step 2 - Customize your Web Curriculum
 
@@ -40,7 +46,9 @@ To customize your **Web Curriculum** you will change only two files:
 
 #### Step 3 - Publish your Web Curriculum
 
-After you made the changes, just `commit` and `push` to your repository and your **Web Curriculum** is ready, just go to http://yourgithubusername.github.io and see your new awesome **Web Curriculum**!!!
+obs: In this stage you can edit your files on the fly by github interface, or if you prefer locally as well.
+
+After you made the changes, just `commit` and `push` to your repository and your **Web Curriculum** is ready, just go to http://your-github-username.github.io and see your new awesome **Web Curriculum**!!!
 
 ## Contributing
 
