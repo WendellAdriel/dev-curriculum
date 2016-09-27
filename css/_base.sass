@@ -26,39 +26,41 @@ a
   padding-top: rem(45)
   text-align: left
 
-  li
-    border-radius: rem(20)
-    height: rem(15)
-    margin-bottom: rem(60)
-
-    em
-      font-size: rem(25)
-      font-weight: bolder
-      position: relative
-      top: rem(-45)
-
-.expand
+.skill
   border-radius: rem(20)
-  box-shadow: 0px 0px 10px 1px rgba(0,198,255,0.4)
-  height: rem(11)
-  margin-left: 0.3%
-  margin-top: rem(2)
-  position: relative
+  height: rem(15)
+  margin-bottom: rem(60)
 
-.default-level
+  &:before
+    display: block
+    content: ''
+    border-radius: rem(20)
+    box-shadow: 0px 0px 10px 1px rgba(0,198,255,0.4)
+    height: rem(11)
+    margin-left: 0.3%
+    margin-top: rem(2)
+    position: relative
+  
+  em
+    font-size: rem(25)
+    font-weight: bolder
+    position: relative
+    top: rem(-45)
+
+.default-level:before
   width: 0
 
-.study-level
+.study-level:before
   width: 20%
 
-.padawan-level
+.padawan-level:before
   width: 40%
 
-.work-level
+.work-level:before
   width: 60%
 
-.specialist-level
+.specialist-level:before
   width: 80%
 
-.jedi-level
+.jedi-level:before
   width: 99.4%
