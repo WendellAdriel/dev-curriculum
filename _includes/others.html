@@ -4,7 +4,7 @@
   <span class="section-title">Other skills</span>
   <ul class="skill-list">
     {% for skill in skills %}
-      <li class="others-skill {% include _skill-level-css.html level=skill.level  %}">
+      <li class="skill {% include _skill-level-css.html level=skill.level  %}">
         <em>{{ skill.name }} - {% include _skill-level-name.html level=skill.level  %}</em>
       </li>
     {% endfor %}
