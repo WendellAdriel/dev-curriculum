@@ -2,42 +2,54 @@
   <div class="header-info">
     <h1 class="author-name">{{ site.author }}</h1>
     <h2 class="author-title">{{ site.author-title }}</h2>
-    <p>
-      {% if site.email %}
-        <a href="mailto:{{ site.email }}">
-          <i class="feature-icon icon-email"></i>
-        </a>
+    <ul class="profile-list">
+        {% if site.email %}
+        <li>
+          <a class="icon-email" href="mailto:{{ site.email }}">
+            <span class="screen-reader">E-mail: {{ site.email }}</span>
+          </a>
+        <li>
       {% endif %}
 
       {% if site.linkedin %}
-        <a href="https://www.linkedin.com/in/{{ site.linkedin }}" target="_blank">
-          <i class="feature-icon icon-linkedin-square"></i>
-        </a>
+        <li>
+          <a class="icon-linkedin-square" href="https://www.linkedin.com/in/{{ site.linkedin }}" target="_blank">
+            <span class="screen-reader">Linkedin profile: {{ site.linkedin }}</span>
+          </a>
+        <li>
       {% endif %}
 
       {% if site.github %}
-        <a href="https://github.com/{{ site.github }}" target="_blank">
-          <i class="feature-icon icon-github-square"></i>
-        </a>
+        <li>
+          <a class="icon-github-square" href="https://github.com/{{ site.github }}" target="_blank">
+            <span class="screen-reader">Github profile: {{ site.github }}</span>
+          </a>
+        <li>
       {% endif %}
 
       {% if site.twitter %}
-        <a href="https://www.twitter.com/{{ site.twitter }}" target="_blank">
-          <i class="feature-icon icon-twitter-square"></i>
-        </a>
+        <li>
+          <a class="icon-twitter-square" href="https://www.twitter.com/{{ site.twitter }}" target="_blank">
+            <span class="screen-reader">Twitter profile: {{ site.twitter }}</span>
+          </a>
+        <li>
       {% endif %}
 
       {% if site.facebook %}
-        <a href="https://www.facebook.com/{{ site.facebook }}" target="_blank">
-          <i class="feature-icon icon-facebook-square"></i>
-        </a>
+        <li>
+          <a class="icon-facebook-square" href="https://www.facebook.com/{{ site.facebook }}" target="_blank">
+            <span class="screen-reader">Facebook profile: {{ site.facebook }}</span>
+          </a>
+        <li>
       {% endif %}
 
       {% if site.googleplus %}
-        <a href="https://plus.google.com/{{ site.googleplus }}" target="_blank">
-          <i class="feature-icon icon-google-plus-square"></i>
-        </a>
+        <li>
+          <a class="icon-google-plus-square" href="https://plus.google.com/{{ site.googleplus }}" target="_blank">
+            <span class="screen-reader">Google plus profile: {{ site.googleplus }}</span>
+          </a>
+        <li>
       {% endif %}
-    </p>
+    </ul>
   </div>
 </header>
