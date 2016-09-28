@@ -1,0 +1,35 @@
+/// Mixin to facilitate alignment.  
+/// This is a very experimental approach, make your browser compatibility tests  
+/// Browser support: http://caniuse.com/#search=transform  
+/// Based on Jeet's align mixin https://github.com/mojotech/jeet/blob/master/scss/jeet/_functions.scss  
+///
+/// @group   Tools
+///
+/// @param   {string} $direction [both] - Alignment wanted. You can choose between `horizontal`, `vertical` or `both` 
+///
+/// @example sass - Usage
+///   @include responsive(medium)
+///     background: blue;
+///     width: 50px;
+///
+/// @example css - Compiled
+///    @media (min-width: 68rem) {
+///      body {
+///        background: blue;
+///        width: 50px;
+///      }
+///    }
+@mixin align($direction: both)
+  position: absolute
+  transform-style: preserve-3d
+
+  @if index("horizontal" "h", $direction) 
+    left: 50%
+    transform: translateX(-50%)
+  @else if index("vertical" "v", $direction) 
+    top: 50%
+    transform: translateY(-50%)
+  @else 
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
