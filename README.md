@@ -50,6 +50,10 @@ obs: In this stage you can edit your files on the fly by github interface, or if
 
 After you made the changes, just `commit` and `push` to your repository and your **Web Curriculum** is ready, just go to http://your-github-username.github.io and see your new awesome **Web Curriculum**!!!
 
+## Changelog
+
+You can see all the important changes **[here](https://github.com/WendellAdriel/dev-curriculum/blob/master/CHANGELOG.md)**
+
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/WendellAdriel/dev-curriculum/. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
