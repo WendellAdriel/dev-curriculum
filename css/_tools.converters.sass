@@ -1,0 +1,55 @@
+/// Constant used to facilitate the convertion of one unit to another.
+/// It's new value need to be setted in the `_config.scss` file.
+/// @group   Tools
+$font-size-base: 16px !default
+
+/// Transforms a `px` value into `em` value.
+/// The unit (px) isn't required.
+/// @group   Tools
+///
+/// @param   {number} $value                       - Value to be converted
+/// @param   {number} $base-size [$font-size-base] - Font size used in the convertion
+///
+/// @return  {number} - Converted value expressed in `em`
+/// @require {variable} $font-size-base
+///
+/// @example scss - Usage
+///   .element {
+///     height: px-to-em(20px);
+///   }
+///
+/// @example scss - Compiled
+///   .element {
+///     height: 1.25em
+///   }
+@function px-to-em($value, $base-size: $font-size-base)
+  @if type-of($value) == 'number'
+    @return (_clean-unit($value) / _clean-unit($base-size)) * 1em
+  @else
+    @warn '#{$value} is not a number'
+
+/// Transforms a `px` value into `rem` value.
+/// The unit (px) isn't required.
+///
+/// @group   Tools
+///
+/// @param   {number} $value                       - Value to be converted
+/// @param   {number} $base-size [$font-size-base] - Font size used in the convertion
+///
+/// @return  {number} - Converted value expressed in `rem`
+/// @require {variable} $font-size-base
+///
+/// @example scss - Usage
+///   .element {
+///     height: px-to-rem(20px);
+///   }
+///
+/// @example scss - Compiled
+///   .element {
+///     height: 1.25rem;
+///   }
+@function px-to-rem($value, $base-size: $font-size-base)
+  @if type-of($value) == 'number'
+    @return (_clean-unit($value) / _clean-unit($font-size-base)) * 1rem
+  @else
+    @warn '#{$value} is not a number'

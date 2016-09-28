@@ -1,0 +1,12 @@
+/// Function to clean the unit of any numeric value making possible do math
+/// @group   Tools
+/// @access  private
+///
+/// @param   {number} $value - Value to be cleaned
+///
+/// @return  {number} - Cleaned value
+@function _clean-unit($value) 
+  @if type-of($value) == 'number' 
+    @return $value / ($value * 0 + 1)
+  @else 
+    @warn "#{$value} it's not a number"
