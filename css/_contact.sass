@@ -4,21 +4,22 @@
 
 .form-panel
   border: 0
-  padding: 0 0 0 5%
+  padding: 0
+  margin: 0 auto
 
 input,
 textarea
   background: transparent
   border: none
   border-bottom: 1px solid darken($contact, 30%)
+  box-sizing: border-box
   color: lighten($secondary, 20%)
   display: block
   font-size: px-to-rem(25)
-  height: px-to-rem(40)
   margin-bottom: px-to-rem(50)
   outline: none
   padding: px-to-rem(10)
-  width: 90%
+  width: 100%
 
   &:focus
     border-bottom: 3px solid darken($contact, 50%)
@@ -26,6 +27,7 @@ textarea
 textarea
   overflow: hidden
   resize: none
+  height: px-to-rem(50)
 
 button
   background-color: transparent
