@@ -1,0 +1,33 @@
+/// Breakpoints map for media queries
+/// @group    Breakpoints
+$breakpoints: (small   : 592px, medium  : 752px, large   : 1088px, xlarge  : 1312px, xxlarge : 1600px ) !default
+
+/// Mixin to facilitate media querie's creation. It's based in **responsive content** concept
+/// The media querie is used in `em` based in this article: http://sergiolopes.org/media-queries-zoom/
+///
+/// @group   Breakpoints
+/// @output  When compiled throws all properties included inside the mixin
+///
+/// @require {variable} $breakpoints
+///
+/// @param   {string} $breakpoint - Target's key name
+///
+/// @example sass - Usage
+///   @include responsive(medium)
+///     background: blue;
+///     width: 50px;
+///
+/// @example css - Compiled
+///    @media (min-width: 68rem) {
+///      body {
+///        background: blue;
+///        width: 50px;
+///      }
+///    }
+@mixin respond-to($breakpoint)
+  @if variable-exists(breakpoints)
+    @media (min-width: px-to-em(map-get($breakpoints, $breakpoint)))
+      @content
+    
+  @else
+    @warn "Sorry! but '$breakpoints' map doesn't exists!"

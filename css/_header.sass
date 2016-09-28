@@ -6,17 +6,40 @@ header
   @include align(both)
   width: 100%
 
+  h1
+    margin: 0 0 px-to-rem(30) 0
+
+  h2
+    margin: 0
+
 .author-name
-  font-size: rem(60)
+  font-size: px-to-rem(60)
 
 .author-title
-  font-size: rem(25)
+  font-size: px-to-rem(25)
 
-.feature-icon
-  font-size: rem(70)
-  @include transition(all 0.5s ease-in-out)
+.profile-list
+  height: px-to-rem(110)
+  line-height: px-to-rem(110)
+  margin: 0
+  vertical-align: bottom
 
-  &:hover
-    color: #fff
-    font-size: rem(90)
-    @include transition(all 0.5s ease-in-out)
+  li
+    transition: $transition-default
+    display: inline-block
+    font-size: px-to-rem(70)
+    list-style: none
+    vertical-align: bottom
+
+    &:hover
+      transition: $transition-default
+      color: #fff
+      font-size: px-to-rem(90)
+
+  a 
+    display: block
+    position: relative
+    width: px-to-rem(90)
+
+    &:before
+      vertical-align: bottom 

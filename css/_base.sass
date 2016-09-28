@@ -8,57 +8,71 @@ a
   text-decoration: none
 
 .section
-  padding: rem(10)
+  padding: px-to-rem(10) 5%
   text-align: center
 
-.section-icon
-  font-size: rem(150)
+.section-title
+  font-size: px-to-rem(60)
+  font-weight: bolder
+  margin: px-to-rem(50) 0 px-to-rem(30) 0
   vertical-align: middle
 
-.section-title
-  font-size: rem(60)
-  font-weight: bolder
-  margin-left: rem(20)
-  vertical-align: middle
+  &:before
+    font-size: px-to-rem(150)
+    vertical-align: middle
+    margin:
+      right: px-to-rem(20)
+      top: -(px-to-rem(40))
+    display: inline-block
 
 .skill-list
   list-style-type: none
-  padding-top: rem(45)
+  padding: px-to-rem(45) 0 0 0
   text-align: left
 
-  li
-    border-radius: rem(20)
-    height: rem(15)
-    margin-bottom: rem(60)
+.skill
+  border-radius: px-to-rem(20)
+  height: px-to-rem(15)
+  margin-bottom: px-to-rem(60)
 
-    em
-      font-size: rem(25)
-      font-weight: bolder
-      position: relative
-      top: rem(-45)
+  &:before
+    border-radius: px-to-rem(20)
+    box-shadow: 0px 0px 10px 1px rgba(0,198,255,0.4)
+    content: ''
+    display: block
+    height: px-to-rem(11)
+    margin-left: 0.3%
+    margin-top: px-to-rem(2)
+    position: relative
+  
+  em
+    font-size: px-to-rem(25)
+    font-weight: bolder
+    position: relative
+    top: px-to-rem(-45)
 
-.expand
-  border-radius: rem(20)
-  box-shadow: 0px 0px 10px 1px rgba(0,198,255,0.4)
-  height: rem(11)
-  margin-left: 0.3%
-  margin-top: rem(2)
-  position: relative
-
-.default-level
+.default-level:before
   width: 0
 
-.study-level
+.study-level:before
   width: 20%
 
-.padawan-level
+.padawan-level:before
   width: 40%
 
-.work-level
+.work-level:before
   width: 60%
 
-.specialist-level
+.specialist-level:before
   width: 80%
 
-.jedi-level
+.jedi-level:before
   width: 99.4%
+
+.screen-reader
+  height: 1px
+  left: -10000px
+  overflow: hidden
+  position: absolute
+  top: auto
+  width: 1px

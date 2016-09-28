@@ -1,12 +1,10 @@
 {% assign skills = site.methodologies | sort: 'level' | reverse %}
 <section id="methodologies" class="section methodologies">
-  <i class="section-icon icon-book"></i>
-  <span class="section-title methodologies-title">Methodologies</span>
+  <h3 class="section-title methodologies-title icon-book">Methodologies</h3>
   <ul class="skill-list">
     {% for skill in skills %}
-      <li class="methodologies-skill">
-        <div class="expand methodologies-level {% include _skill-level-css.html level=skill.level  %}"></div>
-        <em>{{ skill.name }} - {% include _skill-level-name.html level=skill.level  %}<em>
+      <li class="skill {% include _skill-level-css.html level=skill.level  %}">
+        <em>{{ skill.name }} - {% include _skill-level-name.html level=skill.level  %}</em>
       </li>
     {% endfor %}
   </ul>

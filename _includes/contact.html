@@ -1,13 +1,14 @@
 <section id="contact" class="section contact">
-  <i class="section-icon icon-at-sign"></i>
-  <span class="section-title">Contact</span>
-  <div class="form-panel">
-    <form action="https://formspree.io/{{ site.email }}" method="POST" target="_blank">
-      <input type="email" name="email" placeholder="Your email">
-      <textarea name="message" placeholder="Your message" onkeyup="adjust_textarea(this)"></textarea>
-      <button type="submit">Send</button>
-    </form>
-  </div>
+  <h3 class="section-title icon-at-sign">Contact</h3>
+  <form action="https://formspree.io/{{ site.email }}" method="POST" target="_blank">
+    <fieldset class="form-panel">
+      <label for="email" class="screen-reader">Email:</label>
+      <input id="email" type="email" name="email" placeholder="Your email">
+      <label for="message" class="screen-reader">Message:</label>
+      <textarea id="message" name="message" placeholder="Your message" onkeyup="adjust_textarea(this)"></textarea>
+      <button type="submit">Send</button>      
+    </fieldset>
+  </form>
 </section>
 
 <script type="text/javascript">
