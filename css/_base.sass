@@ -3,6 +3,9 @@ body
   height: 100%
   color: $primary
 
+html
+  font-size: medium
+
 a
   color: $primary
   text-decoration: none
@@ -12,22 +15,24 @@ a
   text-align: center
 
 .section-title
-  font-size: px-to-rem(60)
+  font-size: px-to-rem($section-title-font-size)
   font-weight: bolder
-  margin: px-to-rem(50) 0 px-to-rem(30) 0
+  margin: 0
+    top: px-to-em(($section-title-font-size * .85), $section-title-font-size)
+    bottom: px-to-em(($section-title-font-size * 1.4), $section-title-font-size)
   vertical-align: middle
 
   &:before
-    font-size: px-to-rem(150)
+    font-size: px-to-rem($section-title-font-size * 2.5)
     vertical-align: middle
     margin:
-      right: px-to-rem(20)
-      top: -(px-to-rem(40))
+      right: px-to-rem($section-icon-margin)
+      top: -(px-to-em($section-title-font-size / 3.5, $section-title-font-size))
     display: inline-block
 
 .skill-list
   list-style-type: none
-  padding: px-to-rem(45) 0 0 0
+  padding: 0
   text-align: left
 
 .skill
@@ -35,8 +40,14 @@ a
 
   @if $skill-rouded 
     border-radius: px-to-rem($this-radius)
+  box-sizing: border-box
+  font-size: px-to-rem($skill-font-size)
+  font-weight: bolder
   height: px-to-rem($skill-bar-height)
-  margin-bottom: px-to-rem(60)
+  padding: px-to-rem($skill-inner-bar-gap)
+
+  & + & 
+    margin-top: px-to-em($skill-font-size * 2.6, $skill-font-size)
 
   &:before
     @if $skill-rouded
@@ -44,16 +55,12 @@ a
     box-shadow: $skill-shadow
     content: ''
     display: block
-    height: px-to-rem($skill-bar-height - ($skill-inner-bar-gap * 2))
-    margin-left: 0.3%
-    margin-top: px-to-rem($skill-inner-bar-gap)
+    height: 100%
     position: relative
   
   em
-    font-size: px-to-rem(25)
-    font-weight: bolder
     position: relative
-    top: px-to-rem(-45)
+    top: -(px-to-em(($skill-font-size + $skill-bar-height + $skill-inner-bar-gap), $skill-font-size))
 
 .default-level:before
   width: 0
@@ -71,7 +78,7 @@ a
   width: 80%
 
 .jedi-level:before
-  width: 99.4%
+  width: 100%
 
 .screen-reader
   height: 1px
