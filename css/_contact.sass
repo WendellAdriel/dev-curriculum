@@ -1,5 +1,5 @@
 .contact
-  background-color: $contact
+  background-color: $contact-bg-color
   color: lighten($secondary, 20%)
 
 .form-panel
@@ -11,7 +11,7 @@ input,
 textarea
   background: transparent
   border: none
-  border-bottom: 1px solid darken($contact, 30%)
+  border-bottom: 1px solid darken($contact-bg-color, 30%)
   box-sizing: border-box
   color: lighten($secondary, 20%)
   display: block
@@ -22,7 +22,7 @@ textarea
   width: 100%
 
   &:focus
-    border-bottom: 3px solid darken($contact, 50%)
+    border-bottom: 3px solid darken($contact-bg-color, 50%)
 
 textarea
   overflow: hidden
@@ -44,6 +44,6 @@ button
 
   &:hover
     background-color: lighten($secondary, 20%)
-    color: $contact
+    color: $contact-bg-color
     font-size: px-to-rem(35)
     transition: $transition-default
