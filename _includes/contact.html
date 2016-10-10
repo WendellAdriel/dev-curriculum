@@ -3,9 +3,9 @@
   <form action="https://formspree.io/{{ site.email }}" method="POST" target="_blank">
     <fieldset class="form-panel">
       <label for="email" class="screen-reader">Email:</label>
-      <input id="email" type="email" name="email" placeholder="Your email">
+      <input id="email" type="email" name="email" placeholder="Your email" required>
       <label for="message" class="screen-reader">Message:</label>
-      <textarea id="message" name="message" placeholder="Your message" onkeyup="adjust_textarea(this)"></textarea>
+      <textarea id="message" name="message" placeholder="Your message" onkeyup="adjust_textarea(this)" required></textarea>
       <button type="submit">Send</button>      
     </fieldset>
   </form>
