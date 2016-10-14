@@ -13,3 +13,6 @@
 - Removed **Bourbon** gem at **Gemfile** and **_config.yml** -  by [Wendell Adriel](https://github.com/WendellAdriel)
 - Added **version tag** to the project -  by [Wendell Adriel](https://github.com/WendellAdriel)
 - Added **CHANGELOG** file to track important changes -  by [Wendell Adriel](https://github.com/WendellAdriel)
+
+## 1.0.6 (October 14, 2016)
+- Fixed broken Github profile link in footer - by [Wendell Adriel](https://github.com/WendellAdriel)
