@@ -15,4 +15,5 @@
 - Added **CHANGELOG** file to track important changes -  by [Wendell Adriel](https://github.com/WendellAdriel)
 
 ## 1.0.6 (October 14, 2016)
+- Added `required` attribute to contact form fields - by [Onésimo Batista](https://github.com/onesimo)
 - Fixed broken Github profile link in footer - by [Wendell Adriel](https://github.com/WendellAdriel)
