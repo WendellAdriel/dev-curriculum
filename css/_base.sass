@@ -1,10 +1,13 @@
+*
+  box-sizing: border-box
+
 html,
 body
   height: 100%
   color: $primary
 
 html
-  font-size: medium
+  font-size: small
 
   @include respond-to(large)
     font-size: 16px
@@ -41,9 +44,9 @@ a
   text-align: left
 
 .skill
-  $this-radius: $skill-bar-height + ($skill-inner-bar-gap * 2)  
+  $this-radius: $skill-bar-height + ($skill-inner-bar-gap * 2)
 
-  @if $skill-rouded 
+  @if $skill-rouded
     border-radius: px-to-rem($this-radius)
   box-sizing: border-box
   font-size: px-to-rem($skill-font-size)
@@ -51,7 +54,7 @@ a
   height: px-to-rem($skill-bar-height)
   padding: px-to-rem($skill-inner-bar-gap)
 
-  & + & 
+  & + &
     margin-top: px-to-em($skill-font-size * 2.6, $skill-font-size)
 
   &:before
@@ -62,10 +65,14 @@ a
     display: block
     height: 100%
     position: relative
-  
+
   em
     position: relative
     top: -(px-to-em(($skill-font-size + $skill-bar-height + $skill-inner-bar-gap), $skill-font-size))
+    white-space: nowrap
+    overflow: hidden
+    text-overflow: ellipsis
+    display: inline-block
 
 .default-level:before
   width: 0
