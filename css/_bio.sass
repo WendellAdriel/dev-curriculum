@@ -6,6 +6,15 @@
 .bio-icon
   font-size: px-to-rem($bio-icon-size)
 
+  &:before
+    vertical-align: middle
+
+  @include respond-to(medium)
+    font-size: px-to-rem($bio-icon-size + 60)
+
+  @include respond-to(medium)
+    font-size: px-to-rem($bio-icon-size + 130)
+
 .bio-img
   border-radius: $bio-avatar-radius
   display: block
