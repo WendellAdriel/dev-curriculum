@@ -14,6 +14,7 @@ header
     margin: 0
 
 .author-name
+  padding: 0 5%
   font-size: px-to-rem($author-name-font-size)
 
   @include respond-to(large)
@@ -21,6 +22,7 @@ header
 
 .author-title
   font-size: px-to-rem($author-title-font-size)
+  padding: 0 5%
 
 .profile-list
   $responsiveness-diff: 32
@@ -28,7 +30,7 @@ header
   line-height: px-to-rem($social-icon-size * 1.3)
   margin: 0
   vertical-align: bottom
-  padding: 0
+  padding: 0 5%
 
   @include respond-to(large)
     line-height: px-to-rem(($social-icon-size + $responsiveness-diff) * 1.3)
