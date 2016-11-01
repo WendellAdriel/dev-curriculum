@@ -6,6 +6,9 @@ body
 html
   font-size: medium
 
+  @include respond-to(large)
+    font-size: 16px
+
 a
   color: $primary
   text-decoration: none
@@ -17,6 +20,7 @@ a
 .section-title
   font-size: px-to-rem($section-title-font-size)
   font-weight: bolder
+  letter-spacing: -.04em
   margin: 0
     top: px-to-em(($section-title-font-size * .85), $section-title-font-size)
     bottom: px-to-em(($section-title-font-size * 1.4), $section-title-font-size)
