@@ -34,6 +34,12 @@ a
   @include respond-to(large)
     font-size: px-to-rem($section-title-font-size + $responsiveness-diff)
 
+  span
+    @include ellipsis
+
+    display: inline-block
+    width: 100%
+
   &:before
     $responsiveness-diff: 14
 
@@ -59,6 +65,7 @@ a
 
 .skill
   $this-radius: $skill-bar-height + ($skill-inner-bar-gap * 2)
+  $responsiveness-diff: 15
 
   @if $skill-rouded
     border-radius: px-to-rem($this-radius)
@@ -67,9 +74,16 @@ a
   font-weight: bolder
   height: px-to-rem($skill-bar-height)
   padding: px-to-rem($skill-inner-bar-gap)
+  position: relative
+
+  @include respond-to(large)
+    font-size: px-to-rem($skill-font-size + $responsiveness-diff)
 
   & + &
-    margin-top: px-to-em($skill-font-size * 2.6, $skill-font-size)
+    margin-top: px-to-em($skill-font-size * 3.5, $skill-font-size)
+
+    @include respond-to(medium)
+      margin-top: px-to-em($skill-font-size * 2.6, $skill-font-size)
 
   &:before
     @if $skill-rouded
@@ -81,12 +95,20 @@ a
     position: relative
 
   em
-    position: relative
-    top: -(px-to-em(($skill-font-size + $skill-bar-height + $skill-inner-bar-gap), $skill-font-size))
-    white-space: nowrap
-    overflow: hidden
-    text-overflow: ellipsis
-    display: inline-block
+    position: absolute
+    bottom: (px-to-em(($skill-bar-height + $skill-inner-bar-gap), $skill-font-size))
+    width: 100%
+
+    span
+      @include ellipsis
+
+      display: block
+
+      @include respond-to(medium)
+        display: inline
+
+        &:after
+          content: ' - '
 
 .default-level:before
   width: 0
