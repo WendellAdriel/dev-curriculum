@@ -33,9 +33,13 @@ a
     font-size: px-to-rem($section-title-font-size * 2.5)
     vertical-align: middle
     margin:
-      right: px-to-rem($section-icon-margin)
       top: -(px-to-em($section-title-font-size / 3.5, $section-title-font-size))
     display: inline-block
+
+    @include respond-to(large)
+      font-size: px-to-rem($section-title-font-size * 2.5)
+      margin:
+        right: px-to-rem($section-icon-margin)
 
 .skill-list
   list-style-type: none
