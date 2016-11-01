@@ -10,7 +10,11 @@
   border-radius: $bio-avatar-radius
   display: block
   margin: auto
+  max-width: 100%
 
 .bio-text
   font-size: px-to-rem($bio-font-size)
   text-align: $bio-text-alignment
+
+  @include respond-to(large)
+    font-size: px-to-rem($bio-font-size + 10)

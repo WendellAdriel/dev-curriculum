@@ -35,17 +35,21 @@ a
     font-size: px-to-rem($section-title-font-size + $responsiveness-diff)
 
   &:before
+    $responsiveness-diff: 14
+
     font-size: px-to-rem($section-title-font-size * 1.7)
     display: block
     vertical-align: middle
     margin:
       top: -(px-to-em($section-title-font-size / 3.5, $section-title-font-size))
 
-    @include respond-to(large)
-      font-size: px-to-rem($section-title-font-size * 2.5)
+    @include respond-to(medium)
       display: inline-block
       margin:
         right: px-to-rem($section-icon-margin)
+
+    @include respond-to(large)
+      font-size: px-to-rem($section-title-font-size * 2.5)
 
 .skill-list
   list-style-type: none
