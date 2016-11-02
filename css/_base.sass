@@ -1,55 +1,121 @@
+*
+  box-sizing: border-box
+
 html,
 body
   height: 100%
   color: $primary
+
+html
+  font-size: medium
+
+  @include respond-to(large)
+    font-size: 16px
 
 a
   color: $primary
   text-decoration: none
 
 .section
-  padding: px-to-rem(10) 5%
+  padding: px-to-rem(10) 5% px-to-rem(20)
   text-align: center
 
 .section-title
-  font-size: px-to-rem(60)
+  $responsiveness-diff: 46
+
+  font-size: px-to-rem($section-title-font-size)
   font-weight: bolder
-  margin: px-to-rem(50) 0 px-to-rem(30) 0
+  letter-spacing: -.04em
+  margin: 0
+    top: px-to-em(($section-title-font-size * .85), $section-title-font-size)
+    bottom: px-to-em(($section-title-font-size * 1.4), $section-title-font-size)
   vertical-align: middle
 
+  @include respond-to(large)
+    font-size: px-to-rem($section-title-font-size + $responsiveness-diff)
+
+  span
+    @include ellipsis
+
+    display: inline-block
+    width: 100%
+
   &:before
-    font-size: px-to-rem(150)
+    $responsiveness-diff: 14
+
+    font-size: px-to-rem($section-title-font-size * 1.7)
+    display: block
     vertical-align: middle
     margin:
-      right: px-to-rem(20)
-      top: -(px-to-rem(40))
-    display: inline-block
+      top: -(px-to-em($section-title-font-size / 3.5, $section-title-font-size))
+
+    @include respond-to(medium)
+      display: inline-block
+      margin:
+        right: px-to-rem($section-icon-margin)
+
+    @include respond-to(large)
+      font-size: px-to-rem($section-title-font-size * 2.5)
 
 .skill-list
   list-style-type: none
-  padding: px-to-rem(45) 0 0 0
+  margin-bottom: px-to-rem(30)
+  padding: 0
   text-align: left
 
+  @include respond-to(large)
+    max-width: $max-content-width
+    margin:
+      left: auto
+      right: auto
+
+
 .skill
-  border-radius: px-to-rem(20)
-  height: px-to-rem(15)
-  margin-bottom: px-to-rem(60)
+  $this-radius: $skill-bar-height + ($skill-inner-bar-gap * 2)
+  $responsiveness-diff: 15
+
+  @if $skill-rouded
+    border-radius: px-to-rem($this-radius)
+  box-sizing: border-box
+  font-size: px-to-rem($skill-font-size)
+  font-weight: bolder
+  height: px-to-rem($skill-bar-height)
+  padding: px-to-rem($skill-inner-bar-gap)
+  position: relative
+
+  @include respond-to(large)
+    font-size: px-to-rem($skill-font-size + $responsiveness-diff)
+
+  & + &
+    margin-top: px-to-em($skill-font-size * 3.5, $skill-font-size)
+
+    @include respond-to(medium)
+      margin-top: px-to-em($skill-font-size * 2.6, $skill-font-size)
 
   &:before
-    border-radius: px-to-rem(20)
-    box-shadow: 0px 0px 10px 1px rgba(0,198,255,0.4)
+    @if $skill-rouded
+      border-radius: px-to-rem($this-radius)
+    box-shadow: $skill-shadow
     content: ''
     display: block
-    height: px-to-rem(11)
-    margin-left: 0.3%
-    margin-top: px-to-rem(2)
+    height: 100%
     position: relative
-  
+
   em
-    font-size: px-to-rem(25)
-    font-weight: bolder
-    position: relative
-    top: px-to-rem(-45)
+    position: absolute
+    bottom: (px-to-em(($skill-bar-height + $skill-inner-bar-gap), $skill-font-size))
+    width: 100%
+
+    span
+      @include ellipsis
+
+      display: block
+
+      @include respond-to(medium)
+        display: inline
+
+        &:after
+          content: ' - '
 
 .default-level:before
   width: 0
@@ -67,7 +133,7 @@ a
   width: 80%
 
 .jedi-level:before
-  width: 99.4%
+  width: 100%
 
 .screen-reader
   height: 1px

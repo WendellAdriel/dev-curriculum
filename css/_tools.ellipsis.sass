@@ -1,0 +1,18 @@
+/// Mixin to clip text
+/// It's required set some width or max-width in the father element
+/// @group   Tools
+///
+/// @example sass - Usage
+///   .some-text
+///     @include ellipsis
+///
+/// @example css - Compiled
+///   .some-text {
+///     white-space: nowrap
+///     overflow: hidden
+///     text-overflow: ellipsis
+///   }
+@mixin ellipsis
+  white-space: nowrap
+  overflow: hidden
+  text-overflow: ellipsis
