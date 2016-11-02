@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "dev-curriculum"
-  spec.version       = "1.0.6"
+  spec.version       = "1.0.7"
   spec.date          = Date.today.to_s
   spec.authors       = ["WendellAdriel"]
   spec.email         = ["wendelladriel.ti@gmail.com"]
