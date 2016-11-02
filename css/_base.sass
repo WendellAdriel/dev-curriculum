@@ -63,6 +63,13 @@ a
   padding: 0
   text-align: left
 
+  @include respond-to(large)
+    max-width: $max-content-width
+    margin:
+      left: auto
+      right: auto
+
+
 .skill
   $this-radius: $skill-bar-height + ($skill-inner-bar-gap * 2)
   $responsiveness-diff: 15
