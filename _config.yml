@@ -16,7 +16,22 @@ bio: "I'm an experient Software Engineer and Software Architect currently living
       My current stack includes Java (my main lover in this 10 years of career), AngularJS (4 years), Rest (Spring Boot, RestEasy, Jersey, DropWizard) and Docker.
       <br/>
       <br/>
-      Specialities: AngularJS, Java, AWS (Amazon Web Services), JSF, Hibernate, CDI, Spring, SOA, Rest(Jersey, RestEasy, Spring Boot and DropWizard), Tomcat, Nginx, Jboss, MySQL, Oracle, Node.js, MongoDB and PostgreSQL."
+      Portfolio:
+      <br/>- At Indra Company
+      <br/>       * GeoCapes, Invoices, Segurança - (Angular, RestEasy, CDI, Hibernate, JPA, Apache Deltaskipe, Jboss EAP, Oracle and Postgresql) 
+      <br/>       * Banco de Teses - (ElasticSearch, Angular, RestEasy, CDI, Hibernate, JPA, Apache Deltaskipe, Jboss EAP, Oracle and Postgresql) 
+      <br/>       * MPortal - (AngularJS, SpringBoot, Hibernate, JPA, Oracle) 
+      <br/>       * Delegacia Virtual - (JSF2, Primefaces, Hibernate, JPA, Oracle) 
+      <br/>       * SIAE - (Flex, Hibernate, JPA, Oracle)
+      <br/>- At G&G Systems
+      <br/>       * Sisfest - (Angular, RestEasy, Wildfly, Docker, MySQL, CDI, Hibernate and JPA)
+      <br/>- At Cast and Poliedro
+      <br/>       * Several projects for the Brazilian Government - (JSF 1, JSF 2, Primefaces, Apache Wicket, Struts 2, etc.)
+      <br/>- At SWB
+      <br/>       * Several projects for the Telecom segment - (JSF 1, JSF 2, Primefaces, IceFaces, RichFaces, Struts 1, etc.)
+      <br/>- At Obers
+      <br/>       * Several projects for differents segments with Oracle Products - (Oracle Forms and Reports, PL/SQL, Sibel, Oracle Discovery and Oracle Database)
+      "
 
 # Skills
 #
