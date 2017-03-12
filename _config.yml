@@ -8,13 +8,14 @@ language: "" # language to set into html tag, default is en
 
 author: Gabriel Oliveira
 author-title: Software Architect, Tech Leader and Programmer
-gravatar: d36a082aacb53b6f76869748fb4b81d4
 email: gfamorimo@gmail.com
 github: gfamorimo
 linkedin: linkedin.com/in/gfamorimo
 bio: "I'm an experient Software Engineer and Software Architect currently living in Barueri, Brazil.
+      <br/>     
       My current stack includes Java (my main lover in this 10 years of career), AngularJS (4 years), Rest (Spring Boot, RestEasy, Jersey, DropWizard) and Docker.
-      
+      <br/>
+      <br/>
       Specialities: AngularJS, Java, AWS (Amazon Web Services), JSF, Hibernate, CDI, Spring, SOA, Rest(Jersey, RestEasy, Spring Boot and DropWizard), Tomcat, Nginx, Jboss, MySQL, Oracle, Node.js, MongoDB and PostgreSQL."
 
 # Skills
