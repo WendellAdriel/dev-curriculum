@@ -6,23 +6,33 @@ language: "" # language to set into html tag, default is en
 
 # User settings
 
-author: Wendell Adriel
-author-title: Full Stack Developer
-gravatar: d36a082aacb53b6f76869748fb4b81d4
-email: wendelladriel.ti@gmail.com
-twitter: wendell_adriel
-github: WendellAdriel
-googleplus: +WendellAdriel
-facebook: wendell.adriel.7
-linkedin: wendelladrielti/en
-bio: "Brazilian developer. Game, music and technology lover.
-      I graduated in Systems Analysis and Development. I'm a Zend Certified PHP Engineer and Scrum Fundamentals Certified. I love to study and learn new skills,
-      exchange work and study experience with people around me and share my knowledge with the ones that want it. I work with Web Development since 2009 and with
-      Mobile Development since 2015 as Freelancer and in some Brazilian companies too.
-      I'm the creator of CodeShare, a free portal with articles, videos, etc, about Software Development. The purpose of this project is to help people who want
-      to learn about Software Development and start their careers in IT area and to help people that already work with Software Development to improve their
-      technical knowledge to get better job opportunities.
-      I like to work with both: Front-End and Back-End development. I work with many languages, frameworks and technologies."
+author: Gabriel Oliveira
+author-title: Software Architect, Tech Leader and Programmer
+email: gfamorimo@gmail.com
+github: gfamorimo
+linkedin: gfamorimo
+bio: "I'm an experient Software Engineer and Software Architect currently living in Barueri, Brazil.
+      <br/>     
+      My current stack includes Java (10 years of experience), AngularJS (4 years of experience), Rest (Spring Boot, RestEasy, Jersey, DropWizard) and Docker.
+      <br/>
+      <br/>
+      <br/>
+      Portfolio:
+      <br/><br/>- At Indra Company
+      <br/>       * GeoCapes, Invoices, Segurança - (Angular, RestEasy, CDI) 
+      <br/>       * Banco de Teses - (ElasticSearch, Angular, RestEasy, CDI) 
+      <br/>       * MPortal - (AngularJS, SpringBoot, Hibernate, JPA, Oracle) 
+      <br/>       * Delegacia Virtual - (JSF2, Primefaces, Hibernate, JPA, Oracle) 
+      <br/>       * SIAE - (Flex, Hibernate, JPA, Oracle)
+      <br/><br/>- At G&G Systems
+      <br/>       * Sisfest - (Angular, RestEasy, Wildfly, Docker, MySQL, CDI)
+      <br/><br/>- At Cast and Poliedro
+      <br/>       * Several projects for the Brazilian Government - (JSF 1 and 2, Primefaces, Apache Wicket, Struts 2)
+      <br/><br/>- At SWB
+      <br/>       * Several projects for the Telecom segment - (JSF 1 and 2, Primefaces, IceFaces, RichFaces, Struts 1)
+      <br/><br/>- At Obers
+      <br/>       * Several projects for differents segments with Oracle Products - (Forms and Reports, PL/SQL, Sibel, Discovery and Database)
+      "
 
 # Skills
 #
@@ -37,62 +47,34 @@ bio: "Brazilian developer. Game, music and technology lover.
 #
 # If you don't want one of the sections below, leave the variable without any values
 front-end:
+  - name: Angular
+    level: 5
   - name: HTML 5
-    level: 4
-  - name: CSS 3
     level: 4
   - name: JavaScript
     level: 4
   - name: jQuery
     level: 4
-  - name: Angular
-    level: 4
-  - name: Vue.js
-    level: 2
   - name: Bootstrap
     level: 4
   - name: Materialize CSS
-    level: 5
-  - name: LESS
-    level: 3
-  - name: SASS
-    level: 3
-  - name: Stylus
     level: 4
   - name: Gulp
-    level: 4
+    level: 3
   - name: Grunt
     level: 3
   - name: Bower
     level: 3
 
 back-end:
-  - name: PHP
+  - name: Java
     level: 5
   - name: Node.js
-    level: 3
-  - name: Ruby
-    level: 2
-  - name: Python
-    level: 2
-  - name: Java
     level: 4
-  - name: COBOL
+  - name: Python
     level: 2
   - name: SQL
     level: 4
-  - name: Lua
-    level: 2
-
-mobile:
-  - name: Android
-    level: 2
-  - name: Apache Cordova
-    level: 4
-  - name: Ionic
-    level: 4
-  - name: NativeScript
-    level: 3
 
 db:
   - name: MySQL
@@ -100,67 +82,43 @@ db:
   - name: PostgreSQL
     level: 3
   - name: MongoDB
-    level: 4
+    level: 3
   - name: SQL Server
-    level: 2
+    level: 3
   - name: Oracle
-    level: 3
+    level: 4
   - name: Firebase
-    level: 3
+    level: 2
   - name: NoSQL
     level: 4
 
 devops:
   - name: Docker
-    level: 3
+    level: 4
   - name: Vagrant
     level: 3
   - name: Jenkins
-    level: 1
+    level: 3
   - name: Git
     level: 5
   - name: Apache Maven
-    level: 3
+    level: 5
   - name: Continuous Integration
-    level: 3
-  - name: Continuous Delivery
-    level: 2
-
-methodologies:
-  - name: Agile Methodologies
-    level: 3
-  - name: Scrum
     level: 4
-  - name: RUP
+  - name: Continuous Delivery
     level: 3
 
 others:
-  - name: Web Services
-    level: 5
-  - name: REST
+  - name: REST (RestEasy, Spring Boot, Jersey and DropWizard)
     level: 5
   - name: JEE, JSF, JPA, EJB, CDI
-    level: 3
-  - name: iReport, Jasper Reports
-    level: 2
-  - name: Hibernate
-    level: 3
-  - name: Grails
-    level: 2
-  - name: Symfony
-    level: 3
-  - name: Twig
-    level: 4
-  - name: Doctrine ORM
-    level: 3
-  - name: Laravel, Blade, Eloquent ORM
     level: 5
-  - name: Ruby on Rails
-    level: 3
-  - name: MEAN Stack
+  - name: iReport, Jasper Reports
     level: 4
-  - name: Spring
-    level: 3
+  - name: Hibernate
+    level: 5
+  - name: Spring (MVC, Data and Batch)
+    level: 4
 
 # Build settings
 
