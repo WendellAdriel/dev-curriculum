@@ -35,8 +35,6 @@ front-end:
     level: 5
   - name: HTML 5
     level: 4
-  - name: CSS 3
-    level: 3
   - name: JavaScript
     level: 4
   - name: jQuery
@@ -95,9 +93,7 @@ devops:
     level: 3
 
 others:
-  - name: Web Services
-    level: 5
-  - name: REST
+  - name: REST (RestEasy, Spring Boot, Jersey and DropWizard)
     level: 5
   - name: JEE, JSF, JPA, EJB, CDI
     level: 5
@@ -105,7 +101,7 @@ others:
     level: 4
   - name: Hibernate
     level: 5
-  - name: Spring
+  - name: Spring (MVC, Data and Batch)
     level: 4
 
 # Build settings
